@@ -1,0 +1,783 @@
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-15 18:23:41 -0700
+
+ActionController::RoutingError (uninitialized constant HomeController):
+  activesupport (3.2.2) lib/active_support/inflector/methods.rb:229:in `block in constantize'
+  activesupport (3.2.2) lib/active_support/inflector/methods.rb:228:in `each'
+  activesupport (3.2.2) lib/active_support/inflector/methods.rb:228:in `constantize'
+  actionpack (3.2.2) lib/action_dispatch/routing/route_set.rb:63:in `controller_reference'
+  actionpack (3.2.2) lib/action_dispatch/routing/route_set.rb:48:in `controller'
+  actionpack (3.2.2) lib/action_dispatch/routing/route_set.rb:26:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.2) lib/action_dispatch/routing/route_set.rb:594:in `call'
+  mongoid (3.1.2) lib/rack/mongoid/middleware/identity_map.rb:34:in `block in call'
+  mongoid (3.1.2) lib/mongoid/unit_of_work.rb:39:in `unit_of_work'
+  mongoid (3.1.2) lib/rack/mongoid/middleware/identity_map.rb:34:in `call'
+  warden (1.2.1) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.1) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.1) lib/warden/manager.rb:34:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.5) lib/rack/etag.rb:23:in `call'
+  rack (1.4.5) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/cookies.rb:338:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:405:in `_run__1757130423311705076__call__3874096140131594449__callbacks'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.2) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.2) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.2) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  rack-cache (1.2) lib/rack/cache/context.rb:136:in `forward'
+  rack-cache (1.2) lib/rack/cache/context.rb:245:in `fetch'
+  rack-cache (1.2) lib/rack/cache/context.rb:185:in `lookup'
+  rack-cache (1.2) lib/rack/cache/context.rb:66:in `call!'
+  rack-cache (1.2) lib/rack/cache/context.rb:51:in `call'
+  railties (3.2.2) lib/rails/engine.rb:479:in `call'
+  railties (3.2.2) lib/rails/application.rb:220:in `call'
+  railties (3.2.2) lib/rails/railtie/configurable.rb:30:in `method_missing'
+  rack (1.4.5) lib/rack/lint.rb:48:in `_call'
+  rack (1.4.5) lib/rack/lint.rb:36:in `call'
+  rack (1.4.5) lib/rack/showexceptions.rb:24:in `call'
+  rack (1.4.5) lib/rack/commonlogger.rb:33:in `call'
+  rack (1.4.5) lib/rack/chunked.rb:43:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  unicorn (4.6.2) lib/unicorn/http_server.rb:552:in `process_client'
+  unicorn (4.6.2) lib/unicorn/http_server.rb:632:in `worker_loop'
+  unicorn (4.6.2) lib/unicorn/http_server.rb:500:in `spawn_missing_workers'
+  unicorn (4.6.2) lib/unicorn/http_server.rb:142:in `start'
+  unicorn (4.6.2) bin/unicorn:126:in `<top (required)>'
+  /Users/jorgemoscat/.rvm/gems/ruby-1.9.3-p0/bin/unicorn:19:in `load'
+  /Users/jorgemoscat/.rvm/gems/ruby-1.9.3-p0/bin/unicorn:19:in `<main>'
+
+
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2013-04-15 18:23:42 -0700
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (3.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.2) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.2) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.2) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  rack-cache (1.2) lib/rack/cache/context.rb:136:in `forward'
+  rack-cache (1.2) lib/rack/cache/context.rb:245:in `fetch'
+  rack-cache (1.2) lib/rack/cache/context.rb:185:in `lookup'
+  rack-cache (1.2) lib/rack/cache/context.rb:66:in `call!'
+  rack-cache (1.2) lib/rack/cache/context.rb:51:in `call'
+  railties (3.2.2) lib/rails/engine.rb:479:in `call'
+  railties (3.2.2) lib/rails/application.rb:220:in `call'
+  railties (3.2.2) lib/rails/railtie/configurable.rb:30:in `method_missing'
+  rack (1.4.5) lib/rack/lint.rb:48:in `_call'
+  rack (1.4.5) lib/rack/lint.rb:36:in `call'
+  rack (1.4.5) lib/rack/showexceptions.rb:24:in `call'
+  rack (1.4.5) lib/rack/commonlogger.rb:33:in `call'
+  rack (1.4.5) lib/rack/chunked.rb:43:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  unicorn (4.6.2) lib/unicorn/http_server.rb:552:in `process_client'
+  unicorn (4.6.2) lib/unicorn/http_server.rb:632:in `worker_loop'
+  unicorn (4.6.2) lib/unicorn/http_server.rb:500:in `spawn_missing_workers'
+  unicorn (4.6.2) lib/unicorn/http_server.rb:142:in `start'
+  unicorn (4.6.2) bin/unicorn:126:in `<top (required)>'
+  /Users/jorgemoscat/.rvm/gems/ruby-1.9.3-p0/bin/unicorn:19:in `load'
+  /Users/jorgemoscat/.rvm/gems/ruby-1.9.3-p0/bin/unicorn:19:in `<main>'
+
+
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2013-04-15 18:26:24 -0700
+
+ActionController::RoutingError (No route matches [GET] "/assets/rails.png"):
+  actionpack (3.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.2) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.2) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.2) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/static.rb:61:in `call'
+  rack-cache (1.2) lib/rack/cache/context.rb:136:in `forward'
+  rack-cache (1.2) lib/rack/cache/context.rb:245:in `fetch'
+  rack-cache (1.2) lib/rack/cache/context.rb:185:in `lookup'
+  rack-cache (1.2) lib/rack/cache/context.rb:66:in `call!'
+  rack-cache (1.2) lib/rack/cache/context.rb:51:in `call'
+  railties (3.2.2) lib/rails/engine.rb:479:in `call'
+  railties (3.2.2) lib/rails/application.rb:220:in `call'
+  railties (3.2.2) lib/rails/railtie/configurable.rb:30:in `method_missing'
+  rack (1.4.5) lib/rack/lint.rb:48:in `_call'
+  rack (1.4.5) lib/rack/lint.rb:36:in `call'
+  rack (1.4.5) lib/rack/showexceptions.rb:24:in `call'
+  rack (1.4.5) lib/rack/commonlogger.rb:33:in `call'
+  rack (1.4.5) lib/rack/chunked.rb:43:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  unicorn (4.6.2) lib/unicorn/http_server.rb:552:in `process_client'
+  unicorn (4.6.2) lib/unicorn/http_server.rb:632:in `worker_loop'
+  unicorn (4.6.2) lib/unicorn/http_server.rb:500:in `spawn_missing_workers'
+  unicorn (4.6.2) lib/unicorn/http_server.rb:142:in `start'
+  unicorn (4.6.2) bin/unicorn:126:in `<top (required)>'
+  /Users/jorgemoscat/.rvm/gems/ruby-1.9.3-p0/bin/unicorn:19:in `load'
+  /Users/jorgemoscat/.rvm/gems/ruby-1.9.3-p0/bin/unicorn:19:in `<main>'
+
+
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2013-04-15 18:26:28 -0700
+
+ActionController::RoutingError (No route matches [GET] "/assets/rails.png"):
+  actionpack (3.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.2) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.2) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.2) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/static.rb:61:in `call'
+  rack-cache (1.2) lib/rack/cache/context.rb:136:in `forward'
+  rack-cache (1.2) lib/rack/cache/context.rb:245:in `fetch'
+  rack-cache (1.2) lib/rack/cache/context.rb:185:in `lookup'
+  rack-cache (1.2) lib/rack/cache/context.rb:66:in `call!'
+  rack-cache (1.2) lib/rack/cache/context.rb:51:in `call'
+  railties (3.2.2) lib/rails/engine.rb:479:in `call'
+  railties (3.2.2) lib/rails/application.rb:220:in `call'
+  railties (3.2.2) lib/rails/railtie/configurable.rb:30:in `method_missing'
+  rack (1.4.5) lib/rack/lint.rb:48:in `_call'
+  rack (1.4.5) lib/rack/lint.rb:36:in `call'
+  rack (1.4.5) lib/rack/showexceptions.rb:24:in `call'
+  rack (1.4.5) lib/rack/commonlogger.rb:33:in `call'
+  rack (1.4.5) lib/rack/chunked.rb:43:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  unicorn (4.6.2) lib/unicorn/http_server.rb:552:in `process_client'
+  unicorn (4.6.2) lib/unicorn/http_server.rb:632:in `worker_loop'
+  unicorn (4.6.2) lib/unicorn/http_server.rb:500:in `spawn_missing_workers'
+  unicorn (4.6.2) lib/unicorn/http_server.rb:142:in `start'
+  unicorn (4.6.2) bin/unicorn:126:in `<top (required)>'
+  /Users/jorgemoscat/.rvm/gems/ruby-1.9.3-p0/bin/unicorn:19:in `load'
+  /Users/jorgemoscat/.rvm/gems/ruby-1.9.3-p0/bin/unicorn:19:in `<main>'
+
+
+
+
+Started POST "/api/app_login.json" for 127.0.0.1 at 2013-04-15 18:28:30 -0700
+Processing by Api::AppLoginController#create as JSON
+  Parameters: {"uid"=>"545887286", "fb_access_token"=>"AAACEdEose0cBAHVCWahqE4Q9AHZCMZBLtYXerDE8Wb9hz3ZBfZA79LmZAxsSWgfs1nAUsFyi2wBZBfP5LfnoUcDFh897zphZBedsabLFZBfXUQZDZD", "app_login"=>{"uid"=>"545887286", "fb_access_token"=>"AAACEdEose0cBAHVCWahqE4Q9AHZCMZBLtYXerDE8Wb9hz3ZBfZA79LmZAxsSWgfs1nAUsFyi2wBZBfP5LfnoUcDFh897zphZBedsabLFZBfXUQZDZD", "action"=>"create", "controller"=>"api/app_login", "format"=>"json"}}
+Completed 500 Internal Server Error in 758ms
+
+Mongoid::Errors::DocumentNotFound (
+Problem:
+  Document not found for class User with attributes {:user_uid=>"545887286"}.
+Summary:
+  When calling User.find_by with a hash of attributes, all attributes provided must match a document in the database or this error will be raised.
+Resolution:
+  Search for attributes that are in the database or set the Mongoid.raise_not_found_error configuration option to false, which will cause a nil to be returned instead of raising this error.):
+  app/controllers/api/app_login_controller.rb:31:in `create'
+
+
+
+
+Started POST "/api/app_login.json" for 127.0.0.1 at 2013-04-15 18:30:14 -0700
+Processing by Api::AppLoginController#create as JSON
+  Parameters: {"uid"=>"545887286", "fb_access_token"=>"AAACEdEose0cBAHVCWahqE4Q9AHZCMZBLtYXerDE8Wb9hz3ZBfZA79LmZAxsSWgfs1nAUsFyi2wBZBfP5LfnoUcDFh897zphZBedsabLFZBfXUQZDZD", "app_login"=>{"uid"=>"545887286", "fb_access_token"=>"AAACEdEose0cBAHVCWahqE4Q9AHZCMZBLtYXerDE8Wb9hz3ZBfZA79LmZAxsSWgfs1nAUsFyi2wBZBfP5LfnoUcDFh897zphZBedsabLFZBfXUQZDZD", "action"=>"create", "controller"=>"api/app_login", "format"=>"json"}}
+Completed 500 Internal Server Error in 690ms
+
+Mongoid::Errors::DocumentNotFound (
+Problem:
+  Document not found for class User with attributes {:user_uid=>"545887286"}.
+Summary:
+  When calling User.find_by with a hash of attributes, all attributes provided must match a document in the database or this error will be raised.
+Resolution:
+  Search for attributes that are in the database or set the Mongoid.raise_not_found_error configuration option to false, which will cause a nil to be returned instead of raising this error.):
+  app/controllers/api/app_login_controller.rb:31:in `create'
+
+
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2013-04-15 18:34:29 -0700
+
+ActionController::RoutingError (No route matches [GET] "/assets/rails.png"):
+  actionpack (3.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.2) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.2) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.2) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/static.rb:61:in `call'
+  rack-cache (1.2) lib/rack/cache/context.rb:136:in `forward'
+  rack-cache (1.2) lib/rack/cache/context.rb:245:in `fetch'
+  rack-cache (1.2) lib/rack/cache/context.rb:185:in `lookup'
+  rack-cache (1.2) lib/rack/cache/context.rb:66:in `call!'
+  rack-cache (1.2) lib/rack/cache/context.rb:51:in `call'
+  railties (3.2.2) lib/rails/engine.rb:479:in `call'
+  railties (3.2.2) lib/rails/application.rb:220:in `call'
+  railties (3.2.2) lib/rails/railtie/configurable.rb:30:in `method_missing'
+  unicorn (4.6.2) lib/unicorn/http_server.rb:552:in `process_client'
+  unicorn (4.6.2) lib/unicorn/http_server.rb:632:in `worker_loop'
+  unicorn (4.6.2) lib/unicorn/http_server.rb:500:in `spawn_missing_workers'
+  unicorn (4.6.2) lib/unicorn/http_server.rb:142:in `start'
+  unicorn (4.6.2) bin/unicorn:126:in `<top (required)>'
+  /Users/jorgemoscat/.rvm/gems/ruby-1.9.3-p0/bin/unicorn:19:in `load'
+  /Users/jorgemoscat/.rvm/gems/ruby-1.9.3-p0/bin/unicorn:19:in `<main>'
+
+
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2013-04-15 18:34:31 -0700
+
+ActionController::RoutingError (No route matches [GET] "/assets/rails.png"):
+  actionpack (3.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.2) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.2) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.2) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/static.rb:61:in `call'
+  rack-cache (1.2) lib/rack/cache/context.rb:136:in `forward'
+  rack-cache (1.2) lib/rack/cache/context.rb:245:in `fetch'
+  rack-cache (1.2) lib/rack/cache/context.rb:185:in `lookup'
+  rack-cache (1.2) lib/rack/cache/context.rb:66:in `call!'
+  rack-cache (1.2) lib/rack/cache/context.rb:51:in `call'
+  railties (3.2.2) lib/rails/engine.rb:479:in `call'
+  railties (3.2.2) lib/rails/application.rb:220:in `call'
+  railties (3.2.2) lib/rails/railtie/configurable.rb:30:in `method_missing'
+  unicorn (4.6.2) lib/unicorn/http_server.rb:552:in `process_client'
+  unicorn (4.6.2) lib/unicorn/http_server.rb:632:in `worker_loop'
+  unicorn (4.6.2) lib/unicorn/http_server.rb:500:in `spawn_missing_workers'
+  unicorn (4.6.2) lib/unicorn/http_server.rb:142:in `start'
+  unicorn (4.6.2) bin/unicorn:126:in `<top (required)>'
+  /Users/jorgemoscat/.rvm/gems/ruby-1.9.3-p0/bin/unicorn:19:in `load'
+  /Users/jorgemoscat/.rvm/gems/ruby-1.9.3-p0/bin/unicorn:19:in `<main>'
+
+
+
+
+Started POST "/api/app_login.json" for 127.0.0.1 at 2013-04-15 18:34:47 -0700
+Processing by Api::AppLoginController#create as JSON
+  Parameters: {"uid"=>"545887286", "fb_access_token"=>"AAACEdEose0cBAHVCWahqE4Q9AHZCMZBLtYXerDE8Wb9hz3ZBfZA79LmZAxsSWgfs1nAUsFyi2wBZBfP5LfnoUcDFh897zphZBedsabLFZBfXUQZDZD", "app_login"=>{"uid"=>"545887286", "fb_access_token"=>"AAACEdEose0cBAHVCWahqE4Q9AHZCMZBLtYXerDE8Wb9hz3ZBfZA79LmZAxsSWgfs1nAUsFyi2wBZBfP5LfnoUcDFh897zphZBedsabLFZBfXUQZDZD", "action"=>"create", "controller"=>"api/app_login", "format"=>"json"}}
+Completed 500 Internal Server Error in 941ms
+
+Mongoid::Errors::DocumentNotFound (
+Problem:
+  Document not found for class User with attributes {:user_uid=>"545887286"}.
+Summary:
+  When calling User.find_by with a hash of attributes, all attributes provided must match a document in the database or this error will be raised.
+Resolution:
+  Search for attributes that are in the database or set the Mongoid.raise_not_found_error configuration option to false, which will cause a nil to be returned instead of raising this error.):
+  app/controllers/api/app_login_controller.rb:31:in `create'
+
+
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2013-04-15 18:36:43 -0700
+
+ActionController::RoutingError (No route matches [GET] "/assets/rails.png"):
+  actionpack (3.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.2) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.2) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.2) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/static.rb:61:in `call'
+  rack-cache (1.2) lib/rack/cache/context.rb:136:in `forward'
+  rack-cache (1.2) lib/rack/cache/context.rb:245:in `fetch'
+  rack-cache (1.2) lib/rack/cache/context.rb:185:in `lookup'
+  rack-cache (1.2) lib/rack/cache/context.rb:66:in `call!'
+  rack-cache (1.2) lib/rack/cache/context.rb:51:in `call'
+  railties (3.2.2) lib/rails/engine.rb:479:in `call'
+  railties (3.2.2) lib/rails/application.rb:220:in `call'
+  railties (3.2.2) lib/rails/railtie/configurable.rb:30:in `method_missing'
+  unicorn (4.6.2) lib/unicorn/http_server.rb:552:in `process_client'
+  unicorn (4.6.2) lib/unicorn/http_server.rb:632:in `worker_loop'
+  unicorn (4.6.2) lib/unicorn/http_server.rb:500:in `spawn_missing_workers'
+  unicorn (4.6.2) lib/unicorn/http_server.rb:142:in `start'
+  unicorn (4.6.2) bin/unicorn:126:in `<top (required)>'
+  /Users/jorgemoscat/.rvm/gems/ruby-1.9.3-p0/bin/unicorn:19:in `load'
+  /Users/jorgemoscat/.rvm/gems/ruby-1.9.3-p0/bin/unicorn:19:in `<main>'
+
+
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2013-04-15 18:36:44 -0700
+
+ActionController::RoutingError (No route matches [GET] "/assets/rails.png"):
+  actionpack (3.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.2) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.2) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.2) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/static.rb:61:in `call'
+  rack-cache (1.2) lib/rack/cache/context.rb:136:in `forward'
+  rack-cache (1.2) lib/rack/cache/context.rb:245:in `fetch'
+  rack-cache (1.2) lib/rack/cache/context.rb:185:in `lookup'
+  rack-cache (1.2) lib/rack/cache/context.rb:66:in `call!'
+  rack-cache (1.2) lib/rack/cache/context.rb:51:in `call'
+  railties (3.2.2) lib/rails/engine.rb:479:in `call'
+  railties (3.2.2) lib/rails/application.rb:220:in `call'
+  railties (3.2.2) lib/rails/railtie/configurable.rb:30:in `method_missing'
+  unicorn (4.6.2) lib/unicorn/http_server.rb:552:in `process_client'
+  unicorn (4.6.2) lib/unicorn/http_server.rb:632:in `worker_loop'
+  unicorn (4.6.2) lib/unicorn/http_server.rb:500:in `spawn_missing_workers'
+  unicorn (4.6.2) lib/unicorn/http_server.rb:142:in `start'
+  unicorn (4.6.2) bin/unicorn:126:in `<top (required)>'
+  /Users/jorgemoscat/.rvm/gems/ruby-1.9.3-p0/bin/unicorn:19:in `load'
+  /Users/jorgemoscat/.rvm/gems/ruby-1.9.3-p0/bin/unicorn:19:in `<main>'
+
+
+
+
+Started POST "/api/app_login.json" for 127.0.0.1 at 2013-04-15 18:36:52 -0700
+Processing by Api::AppLoginController#create as JSON
+  Parameters: {"uid"=>"545887286", "fb_access_token"=>"AAACEdEose0cBAHVCWahqE4Q9AHZCMZBLtYXerDE8Wb9hz3ZBfZA79LmZAxsSWgfs1nAUsFyi2wBZBfP5LfnoUcDFh897zphZBedsabLFZBfXUQZDZD", "app_login"=>{"uid"=>"545887286", "fb_access_token"=>"AAACEdEose0cBAHVCWahqE4Q9AHZCMZBLtYXerDE8Wb9hz3ZBfZA79LmZAxsSWgfs1nAUsFyi2wBZBfP5LfnoUcDFh897zphZBedsabLFZBfXUQZDZD", "action"=>"create", "controller"=>"api/app_login", "format"=>"json"}}
+Completed 500 Internal Server Error in 683ms
+
+Mongoid::Errors::DocumentNotFound (
+Problem:
+  Document not found for class User with attributes {:user_uid=>"545887286"}.
+Summary:
+  When calling User.find_by with a hash of attributes, all attributes provided must match a document in the database or this error will be raised.
+Resolution:
+  Search for attributes that are in the database or set the Mongoid.raise_not_found_error configuration option to false, which will cause a nil to be returned instead of raising this error.):
+  app/controllers/api/app_login_controller.rb:31:in `create'
+
+
+Compiled jquery.js  (2ms)  (pid 5973)
+Compiled jquery_ujs.js  (0ms)  (pid 5973)
+Compiled api/app_login.js  (273ms)  (pid 5973)
+Compiled profile_data.js  (90ms)  (pid 5973)
+Compiled application.js  (636ms)  (pid 5973)
+Compiled api/app_login.css  (49ms)  (pid 5973)
+Compiled profile_data.css  (1ms)  (pid 5973)
+Compiled application.css  (98ms)  (pid 5973)
+Compiled jquery.js  (3ms)  (pid 5973)
+Compiled jquery_ujs.js  (0ms)  (pid 5973)
+Compiled api/app_login.js  (168ms)  (pid 5973)
+Compiled profile_data.js  (129ms)  (pid 5973)
+Compiled application.js  (463ms)  (pid 5973)
+Compiled api/app_login.css  (15ms)  (pid 5973)
+Compiled profile_data.css  (2ms)  (pid 5973)
+Compiled application.css  (63ms)  (pid 5973)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-15 18:44:21 -0700
+
+ActionController::RoutingError (uninitialized constant HomeController):
+  activesupport (3.2.2) lib/active_support/inflector/methods.rb:229:in `block in constantize'
+  activesupport (3.2.2) lib/active_support/inflector/methods.rb:228:in `each'
+  activesupport (3.2.2) lib/active_support/inflector/methods.rb:228:in `constantize'
+  actionpack (3.2.2) lib/action_dispatch/routing/route_set.rb:63:in `controller_reference'
+  actionpack (3.2.2) lib/action_dispatch/routing/route_set.rb:48:in `controller'
+  actionpack (3.2.2) lib/action_dispatch/routing/route_set.rb:26:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.2) lib/action_dispatch/routing/route_set.rb:594:in `call'
+  mongoid (3.1.2) lib/rack/mongoid/middleware/identity_map.rb:34:in `block in call'
+  mongoid (3.1.2) lib/mongoid/unit_of_work.rb:39:in `unit_of_work'
+  mongoid (3.1.2) lib/rack/mongoid/middleware/identity_map.rb:34:in `call'
+  warden (1.2.1) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.1) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.1) lib/warden/manager.rb:34:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.5) lib/rack/etag.rb:23:in `call'
+  rack (1.4.5) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/cookies.rb:338:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:405:in `_run__1019528971312869836__call__3615912908906936895__callbacks'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.2) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.2) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.2) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  rack-cache (1.2) lib/rack/cache/context.rb:136:in `forward'
+  rack-cache (1.2) lib/rack/cache/context.rb:207:in `validate'
+  rack-cache (1.2) lib/rack/cache/context.rb:181:in `lookup'
+  rack-cache (1.2) lib/rack/cache/context.rb:66:in `call!'
+  rack-cache (1.2) lib/rack/cache/context.rb:51:in `call'
+  railties (3.2.2) lib/rails/engine.rb:479:in `call'
+  railties (3.2.2) lib/rails/application.rb:220:in `call'
+  railties (3.2.2) lib/rails/railtie/configurable.rb:30:in `method_missing'
+  unicorn (4.6.2) lib/unicorn/http_server.rb:552:in `process_client'
+  unicorn (4.6.2) lib/unicorn/http_server.rb:632:in `worker_loop'
+  unicorn (4.6.2) lib/unicorn/http_server.rb:500:in `spawn_missing_workers'
+  unicorn (4.6.2) lib/unicorn/http_server.rb:142:in `start'
+  unicorn (4.6.2) bin/unicorn:126:in `<top (required)>'
+  /Users/jorgemoscat/.rvm/gems/ruby-1.9.3-p0/bin/unicorn:19:in `load'
+  /Users/jorgemoscat/.rvm/gems/ruby-1.9.3-p0/bin/unicorn:19:in `<main>'
+
+
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-15 18:44:25 -0700
+
+ActionController::RoutingError (uninitialized constant HomeController):
+  activesupport (3.2.2) lib/active_support/inflector/methods.rb:229:in `block in constantize'
+  activesupport (3.2.2) lib/active_support/inflector/methods.rb:228:in `each'
+  activesupport (3.2.2) lib/active_support/inflector/methods.rb:228:in `constantize'
+  actionpack (3.2.2) lib/action_dispatch/routing/route_set.rb:63:in `controller_reference'
+  actionpack (3.2.2) lib/action_dispatch/routing/route_set.rb:48:in `controller'
+  actionpack (3.2.2) lib/action_dispatch/routing/route_set.rb:26:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.2) lib/action_dispatch/routing/route_set.rb:594:in `call'
+  mongoid (3.1.2) lib/rack/mongoid/middleware/identity_map.rb:34:in `block in call'
+  mongoid (3.1.2) lib/mongoid/unit_of_work.rb:39:in `unit_of_work'
+  mongoid (3.1.2) lib/rack/mongoid/middleware/identity_map.rb:34:in `call'
+  warden (1.2.1) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.1) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.1) lib/warden/manager.rb:34:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.5) lib/rack/etag.rb:23:in `call'
+  rack (1.4.5) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/cookies.rb:338:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:405:in `_run__1019528971312869836__call__3615912908906936895__callbacks'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.2) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.2) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.2) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  rack-cache (1.2) lib/rack/cache/context.rb:136:in `forward'
+  rack-cache (1.2) lib/rack/cache/context.rb:207:in `validate'
+  rack-cache (1.2) lib/rack/cache/context.rb:181:in `lookup'
+  rack-cache (1.2) lib/rack/cache/context.rb:66:in `call!'
+  rack-cache (1.2) lib/rack/cache/context.rb:51:in `call'
+  railties (3.2.2) lib/rails/engine.rb:479:in `call'
+  railties (3.2.2) lib/rails/application.rb:220:in `call'
+  railties (3.2.2) lib/rails/railtie/configurable.rb:30:in `method_missing'
+  unicorn (4.6.2) lib/unicorn/http_server.rb:552:in `process_client'
+  unicorn (4.6.2) lib/unicorn/http_server.rb:632:in `worker_loop'
+  unicorn (4.6.2) lib/unicorn/http_server.rb:500:in `spawn_missing_workers'
+  unicorn (4.6.2) lib/unicorn/http_server.rb:142:in `start'
+  unicorn (4.6.2) bin/unicorn:126:in `<top (required)>'
+  /Users/jorgemoscat/.rvm/gems/ruby-1.9.3-p0/bin/unicorn:19:in `load'
+  /Users/jorgemoscat/.rvm/gems/ruby-1.9.3-p0/bin/unicorn:19:in `<main>'
+
+
+
+
+Started POST "/api/app_login.json" for 127.0.0.1 at 2013-04-15 18:44:48 -0700
+Processing by Api::AppLoginController#create as JSON
+  Parameters: {"uid"=>"545887286", "fb_access_token"=>"AAACEdEose0cBAHVCWahqE4Q9AHZCMZBLtYXerDE8Wb9hz3ZBfZA79LmZAxsSWgfs1nAUsFyi2wBZBfP5LfnoUcDFh897zphZBedsabLFZBfXUQZDZD", "app_login"=>{"uid"=>"545887286", "fb_access_token"=>"AAACEdEose0cBAHVCWahqE4Q9AHZCMZBLtYXerDE8Wb9hz3ZBfZA79LmZAxsSWgfs1nAUsFyi2wBZBfP5LfnoUcDFh897zphZBedsabLFZBfXUQZDZD", "action"=>"create", "controller"=>"api/app_login", "format"=>"json"}}
+Completed 500 Internal Server Error in 690ms
+
+Mongoid::Errors::DocumentNotFound (
+Problem:
+  Document not found for class User with attributes {:user_uid=>"545887286"}.
+Summary:
+  When calling User.find_by with a hash of attributes, all attributes provided must match a document in the database or this error will be raised.
+Resolution:
+  Search for attributes that are in the database or set the Mongoid.raise_not_found_error configuration option to false, which will cause a nil to be returned instead of raising this error.):
+  app/controllers/api/app_login_controller.rb:31:in `create'
+
+
+
+
+Started POST "/api/app_login.json" for 127.0.0.1 at 2013-04-15 18:46:03 -0700
+Processing by Api::AppLoginController#create as JSON
+  Parameters: {"uid"=>"545887286", "fb_access_token"=>"AAACEdEose0cBAHVCWahqE4Q9AHZCMZBLtYXerDE8Wb9hz3ZBfZA79LmZAxsSWgfs1nAUsFyi2wBZBfP5LfnoUcDFh897zphZBedsabLFZBfXUQZDZD", "app_login"=>{"uid"=>"545887286", "fb_access_token"=>"AAACEdEose0cBAHVCWahqE4Q9AHZCMZBLtYXerDE8Wb9hz3ZBfZA79LmZAxsSWgfs1nAUsFyi2wBZBfP5LfnoUcDFh897zphZBedsabLFZBfXUQZDZD", "action"=>"create", "controller"=>"api/app_login", "format"=>"json"}}
+Completed 500 Internal Server Error in 680ms
+
+Mongoid::Errors::DocumentNotFound (
+Problem:
+  Document not found for class User with attributes {:user_uid=>"545887286"}.
+Summary:
+  When calling User.find_by with a hash of attributes, all attributes provided must match a document in the database or this error will be raised.
+Resolution:
+  Search for attributes that are in the database or set the Mongoid.raise_not_found_error configuration option to false, which will cause a nil to be returned instead of raising this error.):
+  app/controllers/api/app_login_controller.rb:31:in `create'
+
+
+
+
+Started POST "/api/app_login.json" for 127.0.0.1 at 2013-04-15 18:47:58 -0700
+Processing by Api::AppLoginController#create as JSON
+  Parameters: {"uid"=>"545887286", "fb_access_token"=>"AAACEdEose0cBAHVCWahqE4Q9AHZCMZBLtYXerDE8Wb9hz3ZBfZA79LmZAxsSWgfs1nAUsFyi2wBZBfP5LfnoUcDFh897zphZBedsabLFZBfXUQZDZD", "app_login"=>{"uid"=>"545887286", "fb_access_token"=>"AAACEdEose0cBAHVCWahqE4Q9AHZCMZBLtYXerDE8Wb9hz3ZBfZA79LmZAxsSWgfs1nAUsFyi2wBZBfP5LfnoUcDFh897zphZBedsabLFZBfXUQZDZD", "action"=>"create", "controller"=>"api/app_login", "format"=>"json"}}
+Completed 500 Internal Server Error in 669ms
+
+Mongoid::Errors::DocumentNotFound (
+Problem:
+  Document not found for class User with attributes {:user_uid=>"545887286"}.
+Summary:
+  When calling User.find_by with a hash of attributes, all attributes provided must match a document in the database or this error will be raised.
+Resolution:
+  Search for attributes that are in the database or set the Mongoid.raise_not_found_error configuration option to false, which will cause a nil to be returned instead of raising this error.):
+  app/controllers/api/app_login_controller.rb:31:in `create'
+
+
+
+
+Started POST "/api/app_login.json" for 127.0.0.1 at 2013-04-15 18:53:53 -0700
+Processing by Api::AppLoginController#create as JSON
+  Parameters: {"uid"=>"545887286", "fb_access_token"=>"AAACEdEose0cBAHVCWahqE4Q9AHZCMZBLtYXerDE8Wb9hz3ZBfZA79LmZAxsSWgfs1nAUsFyi2wBZBfP5LfnoUcDFh897zphZBedsabLFZBfXUQZDZD", "app_login"=>{"uid"=>"545887286", "fb_access_token"=>"AAACEdEose0cBAHVCWahqE4Q9AHZCMZBLtYXerDE8Wb9hz3ZBfZA79LmZAxsSWgfs1nAUsFyi2wBZBfP5LfnoUcDFh897zphZBedsabLFZBfXUQZDZD", "action"=>"create", "controller"=>"api/app_login", "format"=>"json"}}
+Completed 500 Internal Server Error in 674ms
+
+Mongoid::Errors::DocumentNotFound (
+Problem:
+  Document not found for class User with attributes {:user_uid=>"545887286"}.
+Summary:
+  When calling User.find_by with a hash of attributes, all attributes provided must match a document in the database or this error will be raised.
+Resolution:
+  Search for attributes that are in the database or set the Mongoid.raise_not_found_error configuration option to false, which will cause a nil to be returned instead of raising this error.):
+  app/controllers/api/app_login_controller.rb:31:in `create'
+
+
+
+
+Started POST "/api/app_login.json" for 127.0.0.1 at 2013-04-15 18:54:00 -0700
+Processing by Api::AppLoginController#create as JSON
+  Parameters: {"uid"=>"545887286", "fb_access_token"=>"AAACEdEose0cBAHVCWahqE4Q9AHZCMZBLtYXerDE8Wb9hz3ZBfZA79LmZAxsSWgfs1nAUsFyi2wBZBfP5LfnoUcDFh897zphZBedsabLFZBfXUQZDZD", "app_login"=>{"uid"=>"545887286", "fb_access_token"=>"AAACEdEose0cBAHVCWahqE4Q9AHZCMZBLtYXerDE8Wb9hz3ZBfZA79LmZAxsSWgfs1nAUsFyi2wBZBfP5LfnoUcDFh897zphZBedsabLFZBfXUQZDZD", "action"=>"create", "controller"=>"api/app_login", "format"=>"json"}}
+Completed 500 Internal Server Error in 691ms
+
+Mongoid::Errors::DocumentNotFound (
+Problem:
+  Document not found for class User with attributes {:user_uid=>"545887286"}.
+Summary:
+  When calling User.find_by with a hash of attributes, all attributes provided must match a document in the database or this error will be raised.
+Resolution:
+  Search for attributes that are in the database or set the Mongoid.raise_not_found_error configuration option to false, which will cause a nil to be returned instead of raising this error.):
+  app/controllers/api/app_login_controller.rb:31:in `create'
+
+
+
+
+Started POST "/api/app_login.json" for 127.0.0.1 at 2013-04-15 18:54:36 -0700
+Processing by Api::AppLoginController#create as JSON
+  Parameters: {"uid"=>"545887286", "fb_access_token"=>"AAACEdEose0cBAHVCWahqE4Q9AHZCMZBLtYXerDE8Wb9hz3ZBfZA79LmZAxsSWgfs1nAUsFyi2wBZBfP5LfnoUcDFh897zphZBedsabLFZBfXUQZDZD", "app_login"=>{"uid"=>"545887286", "fb_access_token"=>"AAACEdEose0cBAHVCWahqE4Q9AHZCMZBLtYXerDE8Wb9hz3ZBfZA79LmZAxsSWgfs1nAUsFyi2wBZBfP5LfnoUcDFh897zphZBedsabLFZBfXUQZDZD", "action"=>"create", "controller"=>"api/app_login", "format"=>"json"}}
+Completed 500 Internal Server Error in 173ms
+
+Mongoid::Errors::DocumentNotFound (
+Problem:
+  Document not found for class User with attributes {:user_uid=>"545887286"}.
+Summary:
+  When calling User.find_by with a hash of attributes, all attributes provided must match a document in the database or this error will be raised.
+Resolution:
+  Search for attributes that are in the database or set the Mongoid.raise_not_found_error configuration option to false, which will cause a nil to be returned instead of raising this error.):
+  app/controllers/api/app_login_controller.rb:31:in `create'
+
+
+
+
+Started POST "/api/app_login.json" for 127.0.0.1 at 2013-04-15 18:55:11 -0700
+Processing by Api::AppLoginController#create as JSON
+  Parameters: {"uid"=>"545887286", "fb_access_token"=>"AAACEdEose0cBAHVCWahqE4Q9AHZCMZBLtYXerDE8Wb9hz3ZBfZA79LmZAxsSWgfs1nAUsFyi2wBZBfP5LfnoUcDFh897zphZBedsabLFZBfXUQZDZD", "app_login"=>{"uid"=>"545887286", "fb_access_token"=>"AAACEdEose0cBAHVCWahqE4Q9AHZCMZBLtYXerDE8Wb9hz3ZBfZA79LmZAxsSWgfs1nAUsFyi2wBZBfP5LfnoUcDFh897zphZBedsabLFZBfXUQZDZD", "action"=>"create", "controller"=>"api/app_login", "format"=>"json"}}
+Completed 500 Internal Server Error in 669ms
+
+Mongoid::Errors::DocumentNotFound (
+Problem:
+  Document not found for class User with attributes {:user_uid=>"545887286"}.
+Summary:
+  When calling User.find_by with a hash of attributes, all attributes provided must match a document in the database or this error will be raised.
+Resolution:
+  Search for attributes that are in the database or set the Mongoid.raise_not_found_error configuration option to false, which will cause a nil to be returned instead of raising this error.):
+  app/controllers/api/app_login_controller.rb:31:in `create'
+
+
+
+
+Started POST "/api/app_login.json" for 127.0.0.1 at 2013-04-15 18:55:28 -0700
+Processing by Api::AppLoginController#create as JSON
+  Parameters: {"uid"=>"545887286", "fb_access_token"=>"AAACEdEose0cBAHVCWahqE4Q9AHZCMZBLtYXerDE8Wb9hz3ZBfZA79LmZAxsSWgfs1nAUsFyi2wBZBfP5LfnoUcDFh897zphZBedsabLFZBfXUQZDZD", "app_login"=>{"uid"=>"545887286", "fb_access_token"=>"AAACEdEose0cBAHVCWahqE4Q9AHZCMZBLtYXerDE8Wb9hz3ZBfZA79LmZAxsSWgfs1nAUsFyi2wBZBfP5LfnoUcDFh897zphZBedsabLFZBfXUQZDZD", "action"=>"create", "controller"=>"api/app_login", "format"=>"json"}}
+Completed 500 Internal Server Error in 689ms
+
+Mongoid::Errors::DocumentNotFound (
+Problem:
+  Document not found for class User with attributes {:user_uid=>"545887286"}.
+Summary:
+  When calling User.find_by with a hash of attributes, all attributes provided must match a document in the database or this error will be raised.
+Resolution:
+  Search for attributes that are in the database or set the Mongoid.raise_not_found_error configuration option to false, which will cause a nil to be returned instead of raising this error.):
+  app/controllers/api/app_login_controller.rb:31:in `create'
+
+
+
+
+Started POST "/api/app_login.json" for 127.0.0.1 at 2013-04-15 18:57:20 -0700
+Processing by Api::AppLoginController#create as JSON
+  Parameters: {"uid"=>"545887286", "fb_access_token"=>"AAACEdEose0cBAHVCWahqE4Q9AHZCMZBLtYXerDE8Wb9hz3ZBfZA79LmZAxsSWgfs1nAUsFyi2wBZBfP5LfnoUcDFh897zphZBedsabLFZBfXUQZDZD", "app_login"=>{"uid"=>"545887286", "fb_access_token"=>"AAACEdEose0cBAHVCWahqE4Q9AHZCMZBLtYXerDE8Wb9hz3ZBfZA79LmZAxsSWgfs1nAUsFyi2wBZBfP5LfnoUcDFh897zphZBedsabLFZBfXUQZDZD", "action"=>"create", "controller"=>"api/app_login", "format"=>"json"}}
+Completed 500 Internal Server Error in 682ms
+
+Mongoid::Errors::DocumentNotFound (
+Problem:
+  Document not found for class User with attributes {:user_uid=>"545887286"}.
+Summary:
+  When calling User.find_by with a hash of attributes, all attributes provided must match a document in the database or this error will be raised.
+Resolution:
+  Search for attributes that are in the database or set the Mongoid.raise_not_found_error configuration option to false, which will cause a nil to be returned instead of raising this error.):
+  app/controllers/api/app_login_controller.rb:31:in `create'
+
+
+
+
+Started POST "/api/app_login.json" for 127.0.0.1 at 2013-04-15 18:59:12 -0700
+Processing by Api::AppLoginController#create as JSON
+  Parameters: {"uid"=>"545887286", "fb_access_token"=>"AAACEdEose0cBAHVCWahqE4Q9AHZCMZBLtYXerDE8Wb9hz3ZBfZA79LmZAxsSWgfs1nAUsFyi2wBZBfP5LfnoUcDFh897zphZBedsabLFZBfXUQZDZD", "app_login"=>{"uid"=>"545887286", "fb_access_token"=>"AAACEdEose0cBAHVCWahqE4Q9AHZCMZBLtYXerDE8Wb9hz3ZBfZA79LmZAxsSWgfs1nAUsFyi2wBZBfP5LfnoUcDFh897zphZBedsabLFZBfXUQZDZD", "action"=>"create", "controller"=>"api/app_login", "format"=>"json"}}
+Completed 500 Internal Server Error in 905ms
+
+Mongoid::Errors::DocumentNotFound (
+Problem:
+  Document not found for class User with attributes {:user_uid=>"545887286"}.
+Summary:
+  When calling User.find_by with a hash of attributes, all attributes provided must match a document in the database or this error will be raised.
+Resolution:
+  Search for attributes that are in the database or set the Mongoid.raise_not_found_error configuration option to false, which will cause a nil to be returned instead of raising this error.):
+  app/controllers/api/app_login_controller.rb:31:in `create'
+
+
+
+
+Started POST "/api/app_login.json" for 127.0.0.1 at 2013-04-15 21:02:40 -0700
+
+MultiJson::LoadError (lexical error: invalid character inside string.
+          AAACEdEose0cBAHVCWahqE4Q9AHZCM "}
+                     (right here) ------^
+):
+  multi_json (1.7.2) lib/multi_json/adapters/yajl.rb:11:in `parse'
+  multi_json (1.7.2) lib/multi_json/adapters/yajl.rb:11:in `load'
+  multi_json (1.7.2) lib/multi_json/adapter.rb:19:in `load'
+  multi_json (1.7.2) lib/multi_json.rb:120:in `load'
+  activesupport (3.2.2) lib/active_support/json/decoding.rb:12:in `decode'
+  actionpack (3.2.2) lib/action_dispatch/middleware/params_parser.rb:47:in `parse_formatted_parameters'
+  actionpack (3.2.2) lib/action_dispatch/middleware/params_parser.rb:17:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/cookies.rb:338:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:405:in `_run__3827120370136148733__call__3343860967067175029__callbacks'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.2) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.2) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.2) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.2) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/static.rb:61:in `call'
+  rack-cache (1.2) lib/rack/cache/context.rb:136:in `forward'
+  rack-cache (1.2) lib/rack/cache/context.rb:143:in `pass'
+  rack-cache (1.2) lib/rack/cache/context.rb:155:in `invalidate'
+  rack-cache (1.2) lib/rack/cache/context.rb:71:in `call!'
+  rack-cache (1.2) lib/rack/cache/context.rb:51:in `call'
+  railties (3.2.2) lib/rails/engine.rb:479:in `call'
+  railties (3.2.2) lib/rails/application.rb:220:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.2) lib/rails/rack/log_tailer.rb:14:in `call'
+  unicorn (4.6.2) lib/unicorn/http_server.rb:552:in `process_client'
+  unicorn (4.6.2) lib/unicorn/http_server.rb:632:in `worker_loop'
+  unicorn (4.6.2) lib/unicorn/http_server.rb:500:in `spawn_missing_workers'
+  unicorn (4.6.2) lib/unicorn/http_server.rb:142:in `start'
+  unicorn-rails (1.0.1) lib/unicorn/rails.rb:20:in `run'
+  rack (1.4.5) lib/rack/server.rb:268:in `start'
+  railties (3.2.2) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.2) lib/rails/commands.rb:55:in `block in <top (required)>'
+  railties (3.2.2) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.2) lib/rails/commands.rb:50:in `<top (required)>'
+  script/rails:6:in `require'
+  script/rails:6:in `<main>'
+
+
+
+
+Started POST "/api/app_login.json" for 127.0.0.1 at 2013-04-15 21:04:09 -0700
+Processing by Api::AppLoginController#create as JSON
+  Parameters: {"uid"=>"545887286", "fb_access_token"=>"AAACEdEose0cBAG3bCp02nZCfnfuyQ6lwdl2AOlVwhgGXDsJ4iEAE6axjWuhhc25gnYwCAqh5TFmx6bMUT4ZC0I7wQbRdyNdooE7gMmowZDZD", "app_login"=>{"uid"=>"545887286", "fb_access_token"=>"AAACEdEose0cBAG3bCp02nZCfnfuyQ6lwdl2AOlVwhgGXDsJ4iEAE6axjWuhhc25gnYwCAqh5TFmx6bMUT4ZC0I7wQbRdyNdooE7gMmowZDZD", "action"=>"create", "controller"=>"api/app_login", "format"=>"json"}}
+Completed 500 Internal Server Error in 855ms
+
+Mongoid::Errors::DocumentNotFound (
+Problem:
+  Document not found for class User with attributes {:user_uid=>"545887286"}.
+Summary:
+  When calling User.find_by with a hash of attributes, all attributes provided must match a document in the database or this error will be raised.
+Resolution:
+  Search for attributes that are in the database or set the Mongoid.raise_not_found_error configuration option to false, which will cause a nil to be returned instead of raising this error.):
+  app/controllers/api/app_login_controller.rb:31:in `create'
+
+
+
+
+Started POST "/api/app_login.json" for 127.0.0.1 at 2013-04-15 21:30:38 -0700
+Processing by Api::AppLoginController#create as JSON
+  Parameters: {"uid"=>"545887286", "fb_access_token"=>"AAACEdEose0cBAG3bCp02nZCfnfuyQ6lwdl2AOlVwhgGXDsJ4iEAE6axjWuhhc25gnYwCAqh5TFmx6bMUT4ZC0I7wQbRdyNdooE7gMmowZDZD", "app_login"=>{"uid"=>"545887286", "fb_access_token"=>"AAACEdEose0cBAG3bCp02nZCfnfuyQ6lwdl2AOlVwhgGXDsJ4iEAE6axjWuhhc25gnYwCAqh5TFmx6bMUT4ZC0I7wQbRdyNdooE7gMmowZDZD", "action"=>"create", "controller"=>"api/app_login", "format"=>"json"}}
+Completed 500 Internal Server Error in 906ms
+
+Mongoid::Errors::DocumentNotFound (
+Problem:
+  Document not found for class User with attributes {:user_uid=>"545887286"}.
+Summary:
+  When calling User.find_by with a hash of attributes, all attributes provided must match a document in the database or this error will be raised.
+Resolution:
+  Search for attributes that are in the database or set the Mongoid.raise_not_found_error configuration option to false, which will cause a nil to be returned instead of raising this error.):
+  app/controllers/api/app_login_controller.rb:31:in `create'
+
+

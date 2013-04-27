@@ -1,0 +1,562 @@
+
+=====
+===== LOGGING STARTED Tue Jan 15 10:33:08 PST 2013
+=====
+!!!!
+!!!! WARNING: ulimit -n is 256; 1024 is the recommended minimum.
+!!!!
+Exec: /Users/jorgemoscat/Dev/riak-1.2.1/rel/riak/erts-5.9.1/bin/erlexec -boot /Users/jorgemoscat/Dev/riak-1.2.1/rel/riak/releases/1.2.1/riak             -embedded -config /Users/jorgemoscat/Dev/thanxup-api/db/development/4/etc/app.config             -pa ./lib/basho-patches             -args_file /Users/jorgemoscat/Dev/thanxup-api/db/development/4/etc/vm.args -- console
+Root: /Users/jorgemoscat/Dev/riak-1.2.1/rel/riak
+Erlang R15B01 (erts-5.9.1) [source] [64-bit] [smp:2:2] [async-threads:64] [kernel-poll:true]
+
+
+=INFO REPORT==== 15-Jan-2013::10:33:09 ===
+    alarm_handler: {set,
+                       {{disk_almost_full,
+                            "/private/tmp/KSInstallAction.pSqZ7dpOPK/m"},
+                        []}}
+
+=INFO REPORT==== 15-Jan-2013::10:33:09 ===
+    alarm_handler: {set,{system_memory_high_watermark,[]}}
+** ./lib/basho-patches/etop_txt.beam hides /Users/jorgemoscat/Dev/riak-1.2.1/rel/riak/lib/observer-1.1/ebin/etop_txt.beam
+** /Users/jorgemoscat/Dev/riak-1.2.1/rel/riak/lib/observer-1.1/ebin/etop_txt.beam hides /Users/jorgemoscat/Dev/riak-1.2.1/rel/riak/lib/basho-patches/etop_txt.beam
+** Found 2 name clashes in code paths 
+10:33:10.247 [info] Application lager started on node 'riak738625@127.0.0.1'
+10:33:10.320 [warning] No ring file available.
+10:33:10.431 [info] New capability: {riak_core,vnode_routing} = proxy
+10:33:10.440 [info] New capability: {riak_core,staged_joins} = true
+10:33:10.445 [info] Application riak_core started on node 'riak738625@127.0.0.1' 
+10:33:10.495 [info] Waiting for application riak_pipe to start (0 seconds).
+10:33:10.495 [info] Application riak_pipe started on node 'riak738625@127.0.0.1' 
+10:33:10.520 [info] Waiting for service riak_kv to start (0 seconds)
+10:33:10.562 [info] Spidermonkey VM (thread stack: 16MB, max heap: 8MB, pool: riak_kv_js_map) host starting (<0.283.0>)
+10:33:10.565 [info] Spidermonkey VM (thread stack: 16MB, max heap: 8MB, pool: riak_kv_js_map) host starting (<0.284.0>)
+10:33:10.569 [info] Spidermonkey VM (thread stack: 16MB, max heap: 8MB, pool: riak_kv_js_map) host starting (<0.285.0>)
+10:33:10.572 [info] Spidermonkey VM (thread stack: 16MB, max heap: 8MB, pool: riak_kv_js_map) host starting (<0.286.0>)
+10:33:10.576 [info] Spidermonkey VM (thread stack: 16MB, max heap: 8MB, pool: riak_kv_js_map) host starting (<0.287.0>)
+10:33:10.579 [info] Spidermonkey VM (thread stack: 16MB, max heap: 8MB, pool: riak_kv_js_map) host starting (<0.288.0>)
+10:33:10.582 [info] Spidermonkey VM (thread stack: 16MB, max heap: 8MB, pool: riak_kv_js_map) host starting (<0.289.0>)
+10:33:10.586 [info] Spidermonkey VM (thread stack: 16MB, max heap: 8MB, pool: riak_kv_js_map) host starting (<0.290.0>)
+10:33:10.589 [info] Spidermonkey VM (thread stack: 16MB, max heap: 8MB, pool: riak_kv_js_reduce) host starting (<0.292.0>)
+10:33:10.593 [info] Spidermonkey VM (thread stack: 16MB, max heap: 8MB, pool: riak_kv_js_reduce) host starting (<0.293.0>)
+10:33:10.597 [info] Wait complete for application riak_pipe (0 seconds)
+10:33:10.597 [info] Spidermonkey VM (thread stack: 16MB, max heap: 8MB, pool: riak_kv_js_reduce) host starting (<0.294.0>)
+10:33:10.611 [info] Spidermonkey VM (thread stack: 16MB, max heap: 8MB, pool: riak_kv_js_reduce) host starting (<0.295.0>)
+10:33:10.616 [info] Spidermonkey VM (thread stack: 16MB, max heap: 8MB, pool: riak_kv_js_reduce) host starting (<0.297.0>)
+10:33:10.620 [info] Spidermonkey VM (thread stack: 16MB, max heap: 8MB, pool: riak_kv_js_reduce) host starting (<0.351.0>)
+10:33:10.625 [info] Spidermonkey VM (thread stack: 16MB, max heap: 8MB, pool: riak_kv_js_hook) host starting (<0.409.0>)
+10:33:10.628 [info] Spidermonkey VM (thread stack: 16MB, max heap: 8MB, pool: riak_kv_js_hook) host starting (<0.428.0>)
+10:33:10.955 [info] New capability: {riak_kv,vnode_vclocks} = true
+10:33:10.967 [info] New capability: {riak_kv,legacy_keylisting} = false
+10:33:10.980 [info] New capability: {riak_kv,listkeys_backpressure} = true
+10:33:10.989 [info] New capability: {riak_kv,mapred_system} = pipe
+10:33:11.000 [info] New capability: {riak_kv,mapred_2i_pipe} = true
+10:33:11.049 [info] Waiting for application riak_kv to start (0 seconds).
+10:33:11.172 [info] Application riak_kv started on node 'riak738625@127.0.0.1'
+10:33:11.197 [info] Application merge_index started on node 'riak738625@127.0.0.1'
+10:33:11.200 [info] Waiting for service riak_kv to start (0 seconds)
+10:33:11.256 [info] Wait complete for application riak_kv (0 seconds)
+10:33:11.604 [info] Wait complete for service riak_kv (0 seconds)
+10:33:11.633 [info] Waiting for application riak_search to start (0 seconds).
+10:33:11.637 [info] Wait complete for service riak_kv (1 seconds)
+10:33:11.640 [info] Application riak_search started on node 'riak738625@127.0.0.1'
+10:33:11.656 [warning] The config riak_kv/pb_port has been deprecated and will be removed.  Use riak_api/pb_port in the future.
+10:33:11.656 [warning] The config riak_kv/pb_ip has been deprecated and will be removed.  Use riak_api/pb_ip in the future.
+10:33:11.669 [info] Application riak_api started on node 'riak738625@127.0.0.1'
+10:33:11.675 [info] Application cluster_info started on node 'riak738625@127.0.0.1'
+10:33:11.683 [info] Application riak_control started on node 'riak738625@127.0.0.1'
+10:33:11.684 [info] Application erlydtl started on node 'riak738625@127.0.0.1'
+Eshell V5.9.1  (abort with ^G)
+(riak738625@127.0.0.1)1> 10:33:11.738 [info] Wait complete for application riak_search (0 seconds)
+
+===== ALIVE Tue Jan 15 10:48:11 PST 2013
+10:53:09.881 [error] gen_server memsup terminated with reason: no case clause matching {more,"Pages free:~d.",0,[]} in memsup:fread_value/2 line 762
+10:53:09.893 [info] Spidermonkey VM (pool: riak_kv_js_reduce) host stopping (<0.294.0>)
+10:53:09.893 [info] Spidermonkey VM (pool: riak_kv_js_reduce) host stopping (<0.297.0>)
+10:53:09.894 [info] Spidermonkey VM (pool: riak_kv_js_reduce) host stopping (<0.351.0>)
+10:53:09.894 [info] Spidermonkey VM (pool: riak_kv_js_reduce) host stopping (<0.295.0>)
+10:53:09.894 [info] Spidermonkey VM (pool: riak_kv_js_map) host stopping (<0.285.0>)
+10:53:09.895 [info] Spidermonkey VM (pool: riak_kv_js_map) host stopping (<0.284.0>)
+10:53:09.895 [info] Spidermonkey VM (pool: riak_kv_js_map) host stopping (<0.288.0>)
+10:53:09.895 [info] Spidermonkey VM (pool: riak_kv_js_map) host stopping (<0.286.0>)
+10:53:09.896 [info] Spidermonkey VM (pool: riak_kv_js_map) host stopping (<0.283.0>)
+10:53:09.932 [error] CRASH REPORT Process memsup with 0 neighbours exited with reason: no case clause matching {more,"Pages free:~d.",0,[]} in memsup:fread_value/2 line 762 in gen_server:terminate/6 line 747
+{"Kernel pid terminated",application_controller,"{application_terminated,os_mon,shutdown}"}
+
+Crash dump was written to: /Users/jorgemoscat/Dev/thanxup-api/db/development/4/log/erl_crash.dump
+Kernel pid terminated (application_controller) ({application_terminated,os_mon,shutdown})
+
+=====
+===== LOGGING STARTED Tue Jan 15 11:09:07 PST 2013
+=====
+!!!!
+!!!! WARNING: ulimit -n is 256; 1024 is the recommended minimum.
+!!!!
+Exec: /Users/jorgemoscat/Dev/riak-1.2.1/rel/riak/erts-5.9.1/bin/erlexec -boot /Users/jorgemoscat/Dev/riak-1.2.1/rel/riak/releases/1.2.1/riak             -embedded -config /Users/jorgemoscat/Dev/thanxup-api/db/development/4/etc/app.config             -pa ./lib/basho-patches             -args_file /Users/jorgemoscat/Dev/thanxup-api/db/development/4/etc/vm.args -- console
+Root: /Users/jorgemoscat/Dev/riak-1.2.1/rel/riak
+Erlang R15B01 (erts-5.9.1) [source] [64-bit] [smp:2:2] [async-threads:64] [kernel-poll:true]
+
+
+=INFO REPORT==== 15-Jan-2013::11:09:08 ===
+    alarm_handler: {set,{system_memory_high_watermark,[]}}
+
+=INFO REPORT==== 15-Jan-2013::11:09:08 ===
+    alarm_handler: {set,
+                       {{disk_almost_full,
+                            "/private/tmp/KSInstallAction.pSqZ7dpOPK/m"},
+                        []}}
+** ./lib/basho-patches/etop_txt.beam hides /Users/jorgemoscat/Dev/riak-1.2.1/rel/riak/lib/observer-1.1/ebin/etop_txt.beam
+** /Users/jorgemoscat/Dev/riak-1.2.1/rel/riak/lib/observer-1.1/ebin/etop_txt.beam hides /Users/jorgemoscat/Dev/riak-1.2.1/rel/riak/lib/basho-patches/etop_txt.beam
+** Found 2 name clashes in code paths 
+11:09:08.661 [info] Application lager started on node 'riak738625@127.0.0.1'
+11:09:08.808 [info] Upgrading legacy ring
+11:09:09.031 [info] New capability: {riak_core,vnode_routing} = proxy
+11:09:09.038 [info] New capability: {riak_core,staged_joins} = true
+11:09:09.044 [info] Application riak_core started on node 'riak738625@127.0.0.1' 
+11:09:09.142 [info] Waiting for application riak_pipe to start (0 seconds).
+11:09:09.143 [info] Application riak_pipe started on node 'riak738625@127.0.0.1' 
+11:09:09.196 [info] Waiting for service riak_kv to start (0 seconds)
+11:09:09.239 [info] Spidermonkey VM (thread stack: 16MB, max heap: 8MB, pool: riak_kv_js_map) host starting (<0.283.0>)
+11:09:09.243 [info] Spidermonkey VM (thread stack: 16MB, max heap: 8MB, pool: riak_kv_js_map) host starting (<0.284.0>)
+11:09:09.243 [info] Wait complete for application riak_pipe (0 seconds)
+11:09:09.247 [info] Spidermonkey VM (thread stack: 16MB, max heap: 8MB, pool: riak_kv_js_map) host starting (<0.285.0>)
+11:09:09.258 [info] Spidermonkey VM (thread stack: 16MB, max heap: 8MB, pool: riak_kv_js_map) host starting (<0.286.0>)
+11:09:09.265 [info] Spidermonkey VM (thread stack: 16MB, max heap: 8MB, pool: riak_kv_js_map) host starting (<0.288.0>)
+11:09:09.272 [info] Spidermonkey VM (thread stack: 16MB, max heap: 8MB, pool: riak_kv_js_map) host starting (<0.346.0>)
+11:09:09.275 [info] Spidermonkey VM (thread stack: 16MB, max heap: 8MB, pool: riak_kv_js_map) host starting (<0.417.0>)
+11:09:09.279 [info] Spidermonkey VM (thread stack: 16MB, max heap: 8MB, pool: riak_kv_js_map) host starting (<0.418.0>)
+11:09:09.282 [info] Spidermonkey VM (thread stack: 16MB, max heap: 8MB, pool: riak_kv_js_reduce) host starting (<0.420.0>)
+11:09:09.286 [info] Spidermonkey VM (thread stack: 16MB, max heap: 8MB, pool: riak_kv_js_reduce) host starting (<0.421.0>)
+11:09:09.290 [info] Spidermonkey VM (thread stack: 16MB, max heap: 8MB, pool: riak_kv_js_reduce) host starting (<0.422.0>)
+11:09:09.293 [info] Spidermonkey VM (thread stack: 16MB, max heap: 8MB, pool: riak_kv_js_reduce) host starting (<0.423.0>)
+11:09:09.297 [info] Spidermonkey VM (thread stack: 16MB, max heap: 8MB, pool: riak_kv_js_reduce) host starting (<0.424.0>)
+11:09:09.306 [info] Spidermonkey VM (thread stack: 16MB, max heap: 8MB, pool: riak_kv_js_reduce) host starting (<0.425.0>)
+11:09:09.310 [info] Spidermonkey VM (thread stack: 16MB, max heap: 8MB, pool: riak_kv_js_hook) host starting (<0.427.0>)
+11:09:09.314 [info] Spidermonkey VM (thread stack: 16MB, max heap: 8MB, pool: riak_kv_js_hook) host starting (<0.428.0>)
+11:09:09.904 [info] New capability: {riak_kv,vnode_vclocks} = true
+11:09:09.911 [info] New capability: {riak_kv,legacy_keylisting} = false
+11:09:09.917 [info] New capability: {riak_kv,listkeys_backpressure} = true
+11:09:09.923 [info] New capability: {riak_kv,mapred_system} = pipe
+11:09:09.929 [info] New capability: {riak_kv,mapred_2i_pipe} = true
+11:09:09.950 [info] Waiting for application riak_kv to start (0 seconds).
+11:09:09.965 [info] Application riak_kv started on node 'riak738625@127.0.0.1'
+11:09:09.975 [info] Application merge_index started on node 'riak738625@127.0.0.1'
+11:09:09.978 [info] Waiting for service riak_kv to start (0 seconds)
+11:09:10.052 [info] Wait complete for application riak_kv (0 seconds)
+11:09:10.384 [info] Wait complete for service riak_kv (0 seconds)
+11:09:10.408 [info] Wait complete for service riak_kv (1 seconds)
+11:09:10.415 [info] Waiting for application riak_search to start (0 seconds).
+11:09:10.422 [info] Application riak_search started on node 'riak738625@127.0.0.1'
+11:09:10.430 [warning] The config riak_kv/pb_port has been deprecated and will be removed.  Use riak_api/pb_port in the future.
+11:09:10.431 [warning] The config riak_kv/pb_ip has been deprecated and will be removed.  Use riak_api/pb_ip in the future.
+11:09:10.442 [info] Application riak_api started on node 'riak738625@127.0.0.1'
+11:09:10.447 [info] Application cluster_info started on node 'riak738625@127.0.0.1'
+11:09:10.453 [info] Application riak_control started on node 'riak738625@127.0.0.1'
+11:09:10.453 [info] Application erlydtl started on node 'riak738625@127.0.0.1'
+Eshell V5.9.1  (abort with ^G)
+(riak738625@127.0.0.1)1> 11:09:10.517 [info] Wait complete for application riak_search (0 seconds)
+
+===== ALIVE Tue Jan 15 11:24:10 PST 2013
+
+===== ALIVE Tue Jan 15 11:39:10 PST 2013
+
+===== ALIVE Tue Jan 15 12:26:13 PST 2013
+
+===== ALIVE Tue Jan 15 12:41:13 PST 2013
+
+===== ALIVE Tue Jan 15 12:56:13 PST 2013
+
+===== ALIVE Tue Jan 15 13:11:13 PST 2013
+
+===== ALIVE Tue Jan 15 16:30:37 PST 2013
+
+===== ALIVE Tue Jan 15 16:45:37 PST 2013
+
+===== ALIVE Tue Jan 15 17:00:37 PST 2013
+
+===== ALIVE Tue Jan 15 17:15:37 PST 2013
+
+===== ALIVE Tue Jan 15 17:30:37 PST 2013
+
+===== ALIVE Tue Jan 15 17:45:37 PST 2013
+
+===== ALIVE Tue Jan 15 18:00:37 PST 2013
+
+===== ALIVE Tue Jan 15 18:15:42 PST 2013
+
+===== ALIVE Wed Jan 16 08:54:02 PST 2013
+
+===== ALIVE Wed Jan 16 09:09:02 PST 2013
+
+===== ALIVE Wed Jan 16 09:24:02 PST 2013
+
+===== ALIVE Wed Jan 16 09:39:02 PST 2013
+
+=====
+===== LOGGING STARTED Wed Jan 16 09:54:16 PST 2013
+=====
+!!!!
+!!!! WARNING: ulimit -n is 256; 1024 is the recommended minimum.
+!!!!
+Exec: /Users/jorgemoscat/Dev/riak-1.2.1/rel/riak/erts-5.9.1/bin/erlexec -boot /Users/jorgemoscat/Dev/riak-1.2.1/rel/riak/releases/1.2.1/riak             -embedded -config /Users/jorgemoscat/Dev/thanxup-api/db/development/4/etc/app.config             -pa ./lib/basho-patches             -args_file /Users/jorgemoscat/Dev/thanxup-api/db/development/4/etc/vm.args -- console
+Root: /Users/jorgemoscat/Dev/riak-1.2.1/rel/riak
+Erlang R15B01 (erts-5.9.1) [source] [64-bit] [smp:2:2] [async-threads:64] [kernel-poll:true]
+
+
+=INFO REPORT==== 16-Jan-2013::09:54:17 ===
+    alarm_handler: {set,
+                       {{disk_almost_full,
+                            "/private/tmp/KSInstallAction.pSqZ7dpOPK/m"},
+                        []}}
+
+=INFO REPORT==== 16-Jan-2013::09:54:17 ===
+    alarm_handler: {set,{system_memory_high_watermark,[]}}
+** ./lib/basho-patches/etop_txt.beam hides /Users/jorgemoscat/Dev/riak-1.2.1/rel/riak/lib/observer-1.1/ebin/etop_txt.beam
+** /Users/jorgemoscat/Dev/riak-1.2.1/rel/riak/lib/observer-1.1/ebin/etop_txt.beam hides /Users/jorgemoscat/Dev/riak-1.2.1/rel/riak/lib/basho-patches/etop_txt.beam
+** Found 2 name clashes in code paths 
+09:54:17.665 [info] Application lager started on node 'riak738625@127.0.0.1'
+09:54:17.759 [info] Upgrading legacy ring
+09:54:17.872 [info] New capability: {riak_core,vnode_routing} = proxy
+09:54:17.879 [info] New capability: {riak_core,staged_joins} = true
+09:54:17.884 [info] Application riak_core started on node 'riak738625@127.0.0.1' 
+09:54:17.912 [info] Waiting for application riak_pipe to start (0 seconds).
+09:54:17.912 [info] Application riak_pipe started on node 'riak738625@127.0.0.1' 
+09:54:17.937 [info] Waiting for service riak_kv to start (0 seconds)
+09:54:17.976 [info] Spidermonkey VM (thread stack: 16MB, max heap: 8MB, pool: riak_kv_js_map) host starting (<0.283.0>)
+09:54:17.980 [info] Spidermonkey VM (thread stack: 16MB, max heap: 8MB, pool: riak_kv_js_map) host starting (<0.284.0>)
+09:54:17.983 [info] Spidermonkey VM (thread stack: 16MB, max heap: 8MB, pool: riak_kv_js_map) host starting (<0.285.0>)
+09:54:17.986 [info] Spidermonkey VM (thread stack: 16MB, max heap: 8MB, pool: riak_kv_js_map) host starting (<0.286.0>)
+09:54:17.989 [info] Spidermonkey VM (thread stack: 16MB, max heap: 8MB, pool: riak_kv_js_map) host starting (<0.287.0>)
+09:54:17.993 [info] Spidermonkey VM (thread stack: 16MB, max heap: 8MB, pool: riak_kv_js_map) host starting (<0.288.0>)
+09:54:17.996 [info] Spidermonkey VM (thread stack: 16MB, max heap: 8MB, pool: riak_kv_js_map) host starting (<0.289.0>)
+09:54:17.999 [info] Spidermonkey VM (thread stack: 16MB, max heap: 8MB, pool: riak_kv_js_map) host starting (<0.290.0>)
+09:54:18.003 [info] Spidermonkey VM (thread stack: 16MB, max heap: 8MB, pool: riak_kv_js_reduce) host starting (<0.292.0>)
+09:54:18.006 [info] Spidermonkey VM (thread stack: 16MB, max heap: 8MB, pool: riak_kv_js_reduce) host starting (<0.293.0>)
+09:54:18.009 [info] Spidermonkey VM (thread stack: 16MB, max heap: 8MB, pool: riak_kv_js_reduce) host starting (<0.294.0>)
+09:54:18.012 [info] Spidermonkey VM (thread stack: 16MB, max heap: 8MB, pool: riak_kv_js_reduce) host starting (<0.295.0>)
+09:54:18.013 [info] Wait complete for application riak_pipe (0 seconds)
+09:54:18.020 [info] Spidermonkey VM (thread stack: 16MB, max heap: 8MB, pool: riak_kv_js_reduce) host starting (<0.296.0>)
+09:54:18.028 [info] Spidermonkey VM (thread stack: 16MB, max heap: 8MB, pool: riak_kv_js_reduce) host starting (<0.297.0>)
+09:54:18.034 [info] Spidermonkey VM (thread stack: 16MB, max heap: 8MB, pool: riak_kv_js_hook) host starting (<0.300.0>)
+09:54:18.037 [info] Spidermonkey VM (thread stack: 16MB, max heap: 8MB, pool: riak_kv_js_hook) host starting (<0.348.0>)
+09:54:18.508 [info] New capability: {riak_kv,vnode_vclocks} = true
+09:54:18.515 [info] New capability: {riak_kv,legacy_keylisting} = false
+09:54:18.521 [info] New capability: {riak_kv,listkeys_backpressure} = true
+09:54:18.527 [info] New capability: {riak_kv,mapred_system} = pipe
+09:54:18.533 [info] New capability: {riak_kv,mapred_2i_pipe} = true
+09:54:18.555 [info] Waiting for application riak_kv to start (0 seconds).
+09:54:18.566 [info] Application riak_kv started on node 'riak738625@127.0.0.1'
+09:54:18.577 [info] Application merge_index started on node 'riak738625@127.0.0.1'
+09:54:18.580 [info] Waiting for service riak_kv to start (0 seconds)
+09:54:18.657 [info] Wait complete for application riak_kv (0 seconds)
+09:54:19.160 [info] Wait complete for service riak_kv (1 seconds)
+09:54:19.189 [info] Wait complete for service riak_kv (0 seconds)
+09:54:19.220 [info] Waiting for application riak_search to start (0 seconds).
+09:54:19.225 [info] Application riak_search started on node 'riak738625@127.0.0.1'
+09:54:19.234 [warning] The config riak_kv/pb_port has been deprecated and will be removed.  Use riak_api/pb_port in the future.
+09:54:19.234 [warning] The config riak_kv/pb_ip has been deprecated and will be removed.  Use riak_api/pb_ip in the future.
+09:54:19.246 [info] Application riak_api started on node 'riak738625@127.0.0.1'
+09:54:19.250 [info] Application cluster_info started on node 'riak738625@127.0.0.1'
+09:54:19.256 [info] Application riak_control started on node 'riak738625@127.0.0.1'
+09:54:19.256 [info] Application erlydtl started on node 'riak738625@127.0.0.1'
+Eshell V5.9.1  (abort with ^G)
+(riak738625@127.0.0.1)1> 09:54:19.321 [info] Wait complete for application riak_search (0 seconds)
+
+===== ALIVE Wed Jan 16 10:09:19 PST 2013
+
+===== ALIVE Wed Jan 16 10:24:19 PST 2013
+
+===== ALIVE Wed Jan 16 10:39:19 PST 2013
+
+===== ALIVE Wed Jan 16 10:54:19 PST 2013
+
+===== ALIVE Wed Jan 16 11:09:19 PST 2013
+
+=====
+===== LOGGING STARTED Wed Jan 16 11:14:42 PST 2013
+=====
+!!!!
+!!!! WARNING: ulimit -n is 256; 1024 is the recommended minimum.
+!!!!
+Exec: /Users/jorgemoscat/Dev/riak-1.2.1/rel/riak/erts-5.9.1/bin/erlexec -boot /Users/jorgemoscat/Dev/riak-1.2.1/rel/riak/releases/1.2.1/riak             -embedded -config /Users/jorgemoscat/Dev/thanxup-api/db/development/4/etc/app.config             -pa ./lib/basho-patches             -args_file /Users/jorgemoscat/Dev/thanxup-api/db/development/4/etc/vm.args -- console
+Root: /Users/jorgemoscat/Dev/riak-1.2.1/rel/riak
+Erlang R15B01 (erts-5.9.1) [source] [64-bit] [smp:2:2] [async-threads:64] [kernel-poll:true]
+
+
+=INFO REPORT==== 16-Jan-2013::11:14:43 ===
+    alarm_handler: {set,
+                       {{disk_almost_full,
+                            "/private/tmp/KSInstallAction.pSqZ7dpOPK/m"},
+                        []}}
+
+=INFO REPORT==== 16-Jan-2013::11:14:43 ===
+    alarm_handler: {set,{system_memory_high_watermark,[]}}
+** ./lib/basho-patches/etop_txt.beam hides /Users/jorgemoscat/Dev/riak-1.2.1/rel/riak/lib/observer-1.1/ebin/etop_txt.beam
+** /Users/jorgemoscat/Dev/riak-1.2.1/rel/riak/lib/observer-1.1/ebin/etop_txt.beam hides /Users/jorgemoscat/Dev/riak-1.2.1/rel/riak/lib/basho-patches/etop_txt.beam
+** Found 2 name clashes in code paths 
+11:14:43.799 [info] Application lager started on node 'riak738625@127.0.0.1'
+11:14:43.910 [info] Upgrading legacy ring
+11:14:44.029 [info] New capability: {riak_core,vnode_routing} = proxy
+11:14:44.035 [info] New capability: {riak_core,staged_joins} = true
+11:14:44.042 [info] Application riak_core started on node 'riak738625@127.0.0.1' 
+11:14:44.071 [info] Waiting for application riak_pipe to start (0 seconds).
+11:14:44.072 [info] Application riak_pipe started on node 'riak738625@127.0.0.1' 
+11:14:44.114 [info] Waiting for service riak_kv to start (0 seconds)
+11:14:44.156 [info] Spidermonkey VM (thread stack: 16MB, max heap: 8MB, pool: riak_kv_js_map) host starting (<0.283.0>)
+11:14:44.159 [info] Spidermonkey VM (thread stack: 16MB, max heap: 8MB, pool: riak_kv_js_map) host starting (<0.284.0>)
+11:14:44.162 [info] Spidermonkey VM (thread stack: 16MB, max heap: 8MB, pool: riak_kv_js_map) host starting (<0.285.0>)
+11:14:44.166 [info] Spidermonkey VM (thread stack: 16MB, max heap: 8MB, pool: riak_kv_js_map) host starting (<0.286.0>)
+11:14:44.169 [info] Spidermonkey VM (thread stack: 16MB, max heap: 8MB, pool: riak_kv_js_map) host starting (<0.287.0>)
+11:14:44.173 [info] Wait complete for application riak_pipe (0 seconds)
+11:14:44.173 [info] Spidermonkey VM (thread stack: 16MB, max heap: 8MB, pool: riak_kv_js_map) host starting (<0.288.0>)
+11:14:44.186 [info] Spidermonkey VM (thread stack: 16MB, max heap: 8MB, pool: riak_kv_js_map) host starting (<0.289.0>)
+11:14:44.191 [info] Spidermonkey VM (thread stack: 16MB, max heap: 8MB, pool: riak_kv_js_map) host starting (<0.291.0>)
+11:14:44.196 [info] Spidermonkey VM (thread stack: 16MB, max heap: 8MB, pool: riak_kv_js_reduce) host starting (<0.362.0>)
+11:14:44.199 [info] Spidermonkey VM (thread stack: 16MB, max heap: 8MB, pool: riak_kv_js_reduce) host starting (<0.421.0>)
+11:14:44.203 [info] Spidermonkey VM (thread stack: 16MB, max heap: 8MB, pool: riak_kv_js_reduce) host starting (<0.422.0>)
+11:14:44.206 [info] Spidermonkey VM (thread stack: 16MB, max heap: 8MB, pool: riak_kv_js_reduce) host starting (<0.423.0>)
+11:14:44.210 [info] Spidermonkey VM (thread stack: 16MB, max heap: 8MB, pool: riak_kv_js_reduce) host starting (<0.424.0>)
+11:14:44.213 [info] Spidermonkey VM (thread stack: 16MB, max heap: 8MB, pool: riak_kv_js_reduce) host starting (<0.425.0>)
+11:14:44.216 [info] Spidermonkey VM (thread stack: 16MB, max heap: 8MB, pool: riak_kv_js_hook) host starting (<0.427.0>)
+11:14:44.220 [info] Spidermonkey VM (thread stack: 16MB, max heap: 8MB, pool: riak_kv_js_hook) host starting (<0.428.0>)
+11:14:44.826 [info] New capability: {riak_kv,vnode_vclocks} = true
+11:14:44.832 [info] New capability: {riak_kv,legacy_keylisting} = false
+11:14:44.839 [info] New capability: {riak_kv,listkeys_backpressure} = true
+11:14:44.847 [info] New capability: {riak_kv,mapred_system} = pipe
+11:14:44.857 [info] New capability: {riak_kv,mapred_2i_pipe} = true
+11:14:44.880 [info] Waiting for application riak_kv to start (0 seconds).
+11:14:44.891 [info] Application riak_kv started on node 'riak738625@127.0.0.1'
+11:14:44.901 [info] Application merge_index started on node 'riak738625@127.0.0.1'
+11:14:44.905 [info] Waiting for service riak_kv to start (0 seconds)
+11:14:44.981 [info] Wait complete for application riak_kv (0 seconds)
+11:14:45.714 [info] Wait complete for service riak_kv (0 seconds)
+11:14:45.739 [info] Wait complete for service riak_kv (1 seconds)
+11:14:45.745 [info] Waiting for application riak_search to start (0 seconds).
+11:14:45.754 [info] Application riak_search started on node 'riak738625@127.0.0.1'
+11:14:45.773 [warning] The config riak_kv/pb_port has been deprecated and will be removed.  Use riak_api/pb_port in the future.
+11:14:45.773 [warning] The config riak_kv/pb_ip has been deprecated and will be removed.  Use riak_api/pb_ip in the future.
+11:14:45.794 [info] Application riak_api started on node 'riak738625@127.0.0.1'
+11:14:45.804 [info] Application cluster_info started on node 'riak738625@127.0.0.1'
+11:14:45.847 [info] Wait complete for application riak_search (0 seconds)
+11:14:45.860 [info] Application riak_control started on node 'riak738625@127.0.0.1'
+11:14:45.860 [info] Application erlydtl started on node 'riak738625@127.0.0.1'
+Eshell V5.9.1  (abort with ^G)
+(riak738625@127.0.0.1)1> 
+=====
+===== LOGGING STARTED Wed Jan 16 11:18:51 PST 2013
+=====
+!!!!
+!!!! WARNING: ulimit -n is 256; 1024 is the recommended minimum.
+!!!!
+Exec: /Users/jorgemoscat/Dev/riak-1.2.1/rel/riak/erts-5.9.1/bin/erlexec -boot /Users/jorgemoscat/Dev/riak-1.2.1/rel/riak/releases/1.2.1/riak             -embedded -config /Users/jorgemoscat/Dev/thanxup-api/db/development/4/etc/app.config             -pa ./lib/basho-patches             -args_file /Users/jorgemoscat/Dev/thanxup-api/db/development/4/etc/vm.args -- console
+Root: /Users/jorgemoscat/Dev/riak-1.2.1/rel/riak
+{error_logger,{{2013,1,16},{11,18,52}},"Protocol: ~p: register error: ~p~n",["inet_tcp",{{badmatch,{error,duplicate_name}},[{inet_tcp_dist,listen,1,[{file,"inet_tcp_dist.erl"},{line,70}]},{net_kernel,start_protos,4,[{file,"net_kernel.erl"},{line,1314}]},{net_kernel,start_protos,3,[{file,"net_kernel.erl"},{line,1307}]},{net_kernel,init_node,2,[{file,"net_kernel.erl"},{line,1197}]},{net_kernel,init,1,[{file,"net_kernel.erl"},{line,357}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,304}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,227}]}]}]}
+{error_logger,{{2013,1,16},{11,18,52}},crash_report,[[{initial_call,{net_kernel,init,['Argument__1']}},{pid,<0.20.0>},{registered_name,[]},{error_info,{exit,{error,badarg},[{gen_server,init_it,6,[{file,"gen_server.erl"},{line,320}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,227}]}]}},{ancestors,[net_sup,kernel_sup,<0.10.0>]},{messages,[]},{links,[#Port<0.226>,<0.17.0>]},{dictionary,[{longnames,true}]},{trap_exit,true},{status,running},{heap_size,987},{stack_size,24},{reductions,542}],[]]}
+{error_logger,{{2013,1,16},{11,18,52}},supervisor_report,[{supervisor,{local,net_sup}},{errorContext,start_error},{reason,{'EXIT',nodistribution}},{offender,[{pid,undefined},{name,net_kernel},{mfargs,{net_kernel,start_link,[['riak738625@127.0.0.1',longnames]]}},{restart_type,permanent},{shutdown,2000},{child_type,worker}]}]}
+{error_logger,{{2013,1,16},{11,18,52}},supervisor_report,[{supervisor,{local,kernel_sup}},{errorContext,start_error},{reason,shutdown},{offender,[{pid,undefined},{name,net_sup},{mfargs,{erl_distribution,start_link,[]}},{restart_type,permanent},{shutdown,infinity},{child_type,supervisor}]}]}
+{error_logger,{{2013,1,16},{11,18,52}},std_info,[{application,kernel},{exited,{shutdown,{kernel,start,[normal,[]]}}},{type,permanent}]}
+{"Kernel pid terminated",application_controller,"{application_start_failure,kernel,{shutdown,{kernel,start,[normal,[]]}}}"}
+
+Crash dump was written to: /Users/jorgemoscat/Dev/thanxup-api/db/development/4/log/erl_crash.dump
+Kernel pid terminated (application_controller) ({application_start_failure,kernel,{shutdown,{kernel,start,[normal,[]]}}})
+
+=====
+===== LOGGING STARTED Wed Jan 16 11:28:29 PST 2013
+=====
+!!!!
+!!!! WARNING: ulimit -n is 256; 1024 is the recommended minimum.
+!!!!
+Exec: /Users/jorgemoscat/Dev/riak-1.2.1/rel/riak/erts-5.9.1/bin/erlexec -boot /Users/jorgemoscat/Dev/riak-1.2.1/rel/riak/releases/1.2.1/riak             -embedded -config /Users/jorgemoscat/Dev/thanxup-api/db/development/4/etc/app.config             -pa ./lib/basho-patches             -args_file /Users/jorgemoscat/Dev/thanxup-api/db/development/4/etc/vm.args -- console
+Root: /Users/jorgemoscat/Dev/riak-1.2.1/rel/riak
+Erlang R15B01 (erts-5.9.1) [source] [64-bit] [smp:2:2] [async-threads:64] [kernel-poll:true]
+
+
+=INFO REPORT==== 16-Jan-2013::11:28:32 ===
+    alarm_handler: {set,
+                       {{disk_almost_full,
+                            "/private/tmp/KSInstallAction.pSqZ7dpOPK/m"},
+                        []}}
+
+=INFO REPORT==== 16-Jan-2013::11:28:32 ===
+    alarm_handler: {set,{system_memory_high_watermark,[]}}
+** ./lib/basho-patches/etop_txt.beam hides /Users/jorgemoscat/Dev/riak-1.2.1/rel/riak/lib/observer-1.1/ebin/etop_txt.beam
+** /Users/jorgemoscat/Dev/riak-1.2.1/rel/riak/lib/observer-1.1/ebin/etop_txt.beam hides /Users/jorgemoscat/Dev/riak-1.2.1/rel/riak/lib/basho-patches/etop_txt.beam
+** Found 2 name clashes in code paths 
+11:28:34.036 [info] Application lager started on node 'riak738625@127.0.0.1'
+11:28:34.362 [info] Upgrading legacy ring
+11:28:34.721 [info] New capability: {riak_core,vnode_routing} = proxy
+11:28:34.728 [info] New capability: {riak_core,staged_joins} = true
+11:28:34.734 [info] Application riak_core started on node 'riak738625@127.0.0.1' 
+11:28:34.839 [info] Waiting for application riak_pipe to start (0 seconds).
+11:28:34.840 [info] Application riak_pipe started on node 'riak738625@127.0.0.1' 
+11:28:34.949 [info] Wait complete for application riak_pipe (0 seconds)
+11:28:35.002 [info] Waiting for service riak_kv to start (0 seconds)
+11:28:35.550 [info] Spidermonkey VM (thread stack: 16MB, max heap: 8MB, pool: riak_kv_js_map) host starting (<0.411.0>)
+11:28:35.581 [info] Spidermonkey VM (thread stack: 16MB, max heap: 8MB, pool: riak_kv_js_map) host starting (<0.412.0>)
+11:28:35.593 [info] Spidermonkey VM (thread stack: 16MB, max heap: 8MB, pool: riak_kv_js_map) host starting (<0.413.0>)
+11:28:35.598 [info] Spidermonkey VM (thread stack: 16MB, max heap: 8MB, pool: riak_kv_js_map) host starting (<0.414.0>)
+11:28:35.603 [info] Spidermonkey VM (thread stack: 16MB, max heap: 8MB, pool: riak_kv_js_map) host starting (<0.415.0>)
+11:28:35.612 [info] Spidermonkey VM (thread stack: 16MB, max heap: 8MB, pool: riak_kv_js_map) host starting (<0.416.0>)
+11:28:35.616 [info] Spidermonkey VM (thread stack: 16MB, max heap: 8MB, pool: riak_kv_js_map) host starting (<0.417.0>)
+11:28:35.625 [info] Spidermonkey VM (thread stack: 16MB, max heap: 8MB, pool: riak_kv_js_map) host starting (<0.418.0>)
+11:28:35.630 [info] Spidermonkey VM (thread stack: 16MB, max heap: 8MB, pool: riak_kv_js_reduce) host starting (<0.420.0>)
+11:28:35.636 [info] Spidermonkey VM (thread stack: 16MB, max heap: 8MB, pool: riak_kv_js_reduce) host starting (<0.421.0>)
+11:28:35.641 [info] Spidermonkey VM (thread stack: 16MB, max heap: 8MB, pool: riak_kv_js_reduce) host starting (<0.422.0>)
+11:28:35.663 [info] Spidermonkey VM (thread stack: 16MB, max heap: 8MB, pool: riak_kv_js_reduce) host starting (<0.423.0>)
+11:28:35.717 [info] Spidermonkey VM (thread stack: 16MB, max heap: 8MB, pool: riak_kv_js_reduce) host starting (<0.424.0>)
+11:28:35.731 [info] Spidermonkey VM (thread stack: 16MB, max heap: 8MB, pool: riak_kv_js_reduce) host starting (<0.425.0>)
+11:28:35.748 [info] Spidermonkey VM (thread stack: 16MB, max heap: 8MB, pool: riak_kv_js_hook) host starting (<0.427.0>)
+11:28:35.770 [info] Spidermonkey VM (thread stack: 16MB, max heap: 8MB, pool: riak_kv_js_hook) host starting (<0.428.0>)
+11:28:36.854 [info] New capability: {riak_kv,vnode_vclocks} = true
+11:28:36.866 [info] New capability: {riak_kv,legacy_keylisting} = false
+11:28:36.875 [info] New capability: {riak_kv,listkeys_backpressure} = true
+11:28:36.887 [info] New capability: {riak_kv,mapred_system} = pipe
+11:28:36.894 [info] New capability: {riak_kv,mapred_2i_pipe} = true
+11:28:36.978 [info] Waiting for application riak_kv to start (0 seconds).
+11:28:37.064 [info] Application riak_kv started on node 'riak738625@127.0.0.1'
+11:28:37.101 [info] Wait complete for application riak_kv (0 seconds)
+11:28:37.223 [info] Application merge_index started on node 'riak738625@127.0.0.1'
+11:28:37.258 [info] Waiting for service riak_kv to start (0 seconds)
+11:28:37.955 [info] Wait complete for service riak_kv (2 seconds)
+11:28:37.975 [info] Wait complete for service riak_kv (0 seconds)
+11:28:38.124 [info] Waiting for application riak_search to start (0 seconds).
+11:28:38.136 [info] Application riak_search started on node 'riak738625@127.0.0.1'
+11:28:38.178 [warning] The config riak_kv/pb_port has been deprecated and will be removed.  Use riak_api/pb_port in the future.
+11:28:38.178 [warning] The config riak_kv/pb_ip has been deprecated and will be removed.  Use riak_api/pb_ip in the future.
+11:28:38.192 [info] Application riak_api started on node 'riak738625@127.0.0.1'
+11:28:38.223 [info] Application cluster_info started on node 'riak738625@127.0.0.1'
+11:28:38.230 [info] Wait complete for application riak_search (0 seconds)
+11:28:38.299 [info] Application riak_control started on node 'riak738625@127.0.0.1'
+11:28:38.302 [info] Application erlydtl started on node 'riak738625@127.0.0.1'
+Eshell V5.9.1  (abort with ^G)
+(riak738625@127.0.0.1)1> 
+===== ALIVE Wed Jan 16 11:43:38 PST 2013
+
+===== ALIVE Wed Jan 16 11:58:38 PST 2013
+
+===== Wed Jan 16 12:11:32 PST 2013
+12:11:32.589 [info] alarm_handler: {clear,system_memory_high_watermark}
+12:12:32.434 [info] alarm_handler: {set,{system_memory_high_watermark,[]}}
+
+===== ALIVE Wed Jan 16 12:27:32 PST 2013
+
+===== ALIVE Wed Jan 16 12:42:32 PST 2013
+
+===== ALIVE Wed Jan 16 13:04:22 PST 2013
+
+===== ALIVE Wed Jan 16 13:19:22 PST 2013
+13:24:13.693 [info] alarm_handler: {clear,system_memory_high_watermark}
+
+===== ALIVE Wed Jan 16 13:39:13 PST 2013
+
+===== ALIVE Wed Jan 16 13:54:13 PST 2013
+
+===== ALIVE Wed Jan 16 14:09:13 PST 2013
+
+===== ALIVE Wed Jan 16 14:24:13 PST 2013
+
+===== ALIVE Wed Jan 16 14:39:13 PST 2013
+
+===== ALIVE Wed Jan 16 14:54:13 PST 2013
+
+===== Thu Jan 17 08:04:31 PST 2013
+08:04:31.760 [info] alarm_handler: {set,{system_memory_high_watermark,[]}}
+08:05:30.742 [info] alarm_handler: {clear,system_memory_high_watermark}
+08:09:30.759 [info] alarm_handler: {set,{system_memory_high_watermark,[]}}
+
+===== ALIVE Thu Jan 17 08:24:28 PST 2013
+
+===== ALIVE Thu Jan 17 08:39:28 PST 2013
+
+===== ALIVE Thu Jan 17 09:15:22 PST 2013
+09:16:34.018 [info] alarm_handler: {clear,system_memory_high_watermark}
+
+=====
+===== LOGGING STARTED Thu Jan 17 11:53:28 PST 2013
+=====
+Exec: /Users/jorgemoscat/Dev/riak-1.2.1/rel/riak/erts-5.9.1/bin/erlexec -boot /Users/jorgemoscat/Dev/riak-1.2.1/rel/riak/releases/1.2.1/riak             -embedded -config /Users/jorgemoscat/Dev/thanxup-api/db/development/4/etc/app.config             -pa ./lib/basho-patches             -args_file /Users/jorgemoscat/Dev/thanxup-api/db/development/4/etc/vm.args -- console
+Root: /Users/jorgemoscat/Dev/riak-1.2.1/rel/riak
+Erlang R15B01 (erts-5.9.1) [source] [64-bit] [smp:2:2] [async-threads:64] [kernel-poll:true]
+
+
+=INFO REPORT==== 17-Jan-2013::11:53:29 ===
+    alarm_handler: {set,{system_memory_high_watermark,[]}}
+** ./lib/basho-patches/etop_txt.beam hides /Users/jorgemoscat/Dev/riak-1.2.1/rel/riak/lib/observer-1.1/ebin/etop_txt.beam
+** /Users/jorgemoscat/Dev/riak-1.2.1/rel/riak/lib/observer-1.1/ebin/etop_txt.beam hides /Users/jorgemoscat/Dev/riak-1.2.1/rel/riak/lib/basho-patches/etop_txt.beam
+** Found 2 name clashes in code paths 
+11:53:30.370 [info] Application lager started on node 'riak738625@127.0.0.1'
+11:53:30.464 [info] Upgrading legacy ring
+11:53:30.567 [info] New capability: {riak_core,vnode_routing} = proxy
+11:53:30.629 [info] New capability: {riak_core,staged_joins} = true
+11:53:30.634 [info] Application riak_core started on node 'riak738625@127.0.0.1' 
+11:53:30.671 [info] Waiting for application riak_pipe to start (0 seconds).
+11:53:30.671 [info] Application riak_pipe started on node 'riak738625@127.0.0.1' 
+11:53:30.700 [info] Waiting for service riak_kv to start (0 seconds)
+11:53:30.741 [info] Spidermonkey VM (thread stack: 16MB, max heap: 8MB, pool: riak_kv_js_map) host starting (<0.283.0>)
+11:53:30.745 [info] Spidermonkey VM (thread stack: 16MB, max heap: 8MB, pool: riak_kv_js_map) host starting (<0.284.0>)
+11:53:30.749 [info] Spidermonkey VM (thread stack: 16MB, max heap: 8MB, pool: riak_kv_js_map) host starting (<0.285.0>)
+11:53:30.754 [info] Spidermonkey VM (thread stack: 16MB, max heap: 8MB, pool: riak_kv_js_map) host starting (<0.286.0>)
+11:53:30.762 [info] Spidermonkey VM (thread stack: 16MB, max heap: 8MB, pool: riak_kv_js_map) host starting (<0.287.0>)
+11:53:30.766 [info] Spidermonkey VM (thread stack: 16MB, max heap: 8MB, pool: riak_kv_js_map) host starting (<0.288.0>)
+11:53:30.771 [info] Spidermonkey VM (thread stack: 16MB, max heap: 8MB, pool: riak_kv_js_map) host starting (<0.289.0>)
+11:53:30.773 [info] Wait complete for application riak_pipe (0 seconds)
+11:53:30.783 [info] Spidermonkey VM (thread stack: 16MB, max heap: 8MB, pool: riak_kv_js_map) host starting (<0.290.0>)
+11:53:30.793 [info] Spidermonkey VM (thread stack: 16MB, max heap: 8MB, pool: riak_kv_js_reduce) host starting (<0.292.0>)
+11:53:30.800 [info] Spidermonkey VM (thread stack: 16MB, max heap: 8MB, pool: riak_kv_js_reduce) host starting (<0.294.0>)
+11:53:30.806 [info] Spidermonkey VM (thread stack: 16MB, max heap: 8MB, pool: riak_kv_js_reduce) host starting (<0.422.0>)
+11:53:30.811 [info] Spidermonkey VM (thread stack: 16MB, max heap: 8MB, pool: riak_kv_js_reduce) host starting (<0.423.0>)
+11:53:30.815 [info] Spidermonkey VM (thread stack: 16MB, max heap: 8MB, pool: riak_kv_js_reduce) host starting (<0.424.0>)
+11:53:30.819 [info] Spidermonkey VM (thread stack: 16MB, max heap: 8MB, pool: riak_kv_js_reduce) host starting (<0.425.0>)
+11:53:30.822 [info] Spidermonkey VM (thread stack: 16MB, max heap: 8MB, pool: riak_kv_js_hook) host starting (<0.427.0>)
+11:53:30.825 [info] Spidermonkey VM (thread stack: 16MB, max heap: 8MB, pool: riak_kv_js_hook) host starting (<0.428.0>)
+11:53:31.332 [info] New capability: {riak_kv,vnode_vclocks} = true
+11:53:31.338 [info] New capability: {riak_kv,legacy_keylisting} = false
+11:53:31.344 [info] New capability: {riak_kv,listkeys_backpressure} = true
+11:53:31.354 [info] New capability: {riak_kv,mapred_system} = pipe
+11:53:31.361 [info] New capability: {riak_kv,mapred_2i_pipe} = true
+11:53:31.383 [info] Waiting for application riak_kv to start (0 seconds).
+11:53:31.393 [info] Application riak_kv started on node 'riak738625@127.0.0.1'
+11:53:31.402 [info] Application merge_index started on node 'riak738625@127.0.0.1'
+11:53:31.405 [info] Waiting for service riak_kv to start (0 seconds)
+11:53:31.484 [info] Wait complete for application riak_kv (0 seconds)
+11:53:32.011 [info] Wait complete for service riak_kv (0 seconds)
+11:53:32.018 [info] Wait complete for service riak_kv (1 seconds)
+11:53:32.050 [info] Waiting for application riak_search to start (0 seconds).
+11:53:32.063 [info] Application riak_search started on node 'riak738625@127.0.0.1'
+11:53:32.075 [warning] The config riak_kv/pb_port has been deprecated and will be removed.  Use riak_api/pb_port in the future.
+11:53:32.076 [warning] The config riak_kv/pb_ip has been deprecated and will be removed.  Use riak_api/pb_ip in the future.
+11:53:32.089 [info] Application riak_api started on node 'riak738625@127.0.0.1'
+11:53:32.102 [info] Application cluster_info started on node 'riak738625@127.0.0.1'
+11:53:32.111 [info] Application riak_control started on node 'riak738625@127.0.0.1'
+11:53:32.112 [info] Application erlydtl started on node 'riak738625@127.0.0.1'
+Eshell V5.9.1  (abort with ^G)
+(riak738625@127.0.0.1)1> 11:53:32.153 [info] Wait complete for application riak_search (0 seconds)
+
+===== ALIVE Thu Jan 17 12:08:32 PST 2013
+
+===== ALIVE Thu Jan 17 12:23:32 PST 2013
+
+===== ALIVE Thu Jan 17 12:38:32 PST 2013
+
+===== ALIVE Thu Jan 17 12:53:32 PST 2013
+
+===== ALIVE Thu Jan 17 13:08:32 PST 2013
+
+===== ALIVE Thu Jan 17 13:23:32 PST 2013
+
+===== ALIVE Thu Jan 17 13:38:32 PST 2013
+
+===== ALIVE Thu Jan 17 13:53:32 PST 2013
+
+===== ALIVE Thu Jan 17 14:08:32 PST 2013
+
+===== ALIVE Thu Jan 17 14:23:32 PST 2013
+
+===== ALIVE Thu Jan 17 14:38:32 PST 2013
+
+===== ALIVE Thu Jan 17 15:29:12 PST 2013
+
+===== ALIVE Thu Jan 17 15:44:12 PST 2013
+
+===== Thu Jan 17 15:50:34 PST 2013
+15:50:34.108 [info] alarm_handler: {clear,system_memory_high_watermark}
